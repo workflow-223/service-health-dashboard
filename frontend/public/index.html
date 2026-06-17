@@ -7,6 +7,17 @@
     <style>
       * { margin: 0; padding: 0; box-sizing: border-box; }
       body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #0f172a; color: #e2e8f0; }
+      #root { width: 100%; min-height: 100vh; }
+      #root > div { width: 100%; max-width: 100%; overflow-x: auto; }
+      img, video, canvas, svg { max-width: 100%; height: auto; }
+      table { width: 100%; overflow-x: auto; display: block; }
+      @media (max-width: 768px) {
+        body { font-size: 14px; }
+        #root > div { padding: 0 8px; }
+      }
+      @media (max-width: 480px) {
+        body { font-size: 13px; }
+      }
     </style>
   </head>
   <body>
